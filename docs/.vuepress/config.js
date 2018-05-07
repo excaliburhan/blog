@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/', // 站点根路径
+  base: '/blog/', // 站点根路径
   dest: './dist', // 输出目录
   title: '韩小平的博客', // 网站标题
   description: 'Just A Coder.', // 网站简介
