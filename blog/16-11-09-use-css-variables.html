@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>韩小平的博客 | 舍弃预处理，拥抱CSS变量</title>
+    <meta name="description" content="Just A Coder.">
+    
+    
+    <link rel="preload" href="/assets/css/23.styles.40677ac6.css" as="style"><link rel="preload" href="/assets/js/app.e57f2dcc.js" as="script"><link rel="preload" href="/assets/js/10.8acc4974.js" as="script"><link rel="prefetch" href="/assets/js/12.f8a3eb3b.js"><link rel="prefetch" href="/assets/js/1.93c59e2f.js"><link rel="prefetch" href="/assets/js/2.a507d539.js"><link rel="prefetch" href="/assets/js/3.ead3c067.js"><link rel="prefetch" href="/assets/js/4.388e3236.js"><link rel="prefetch" href="/assets/js/5.b5290f86.js"><link rel="prefetch" href="/assets/js/6.7b28e046.js"><link rel="prefetch" href="/assets/js/7.2119cc46.js"><link rel="prefetch" href="/assets/js/8.b78f497a.js"><link rel="prefetch" href="/assets/js/9.1865abc6.js"><link rel="prefetch" href="/assets/js/11.05c20cce.js"><link rel="prefetch" href="/assets/js/0.bbd41d67.js"><link rel="prefetch" href="/assets/js/13.fa869d5b.js"><link rel="prefetch" href="/assets/js/14.f9caba99.js"><link rel="prefetch" href="/assets/js/15.c625f060.js"><link rel="prefetch" href="/assets/js/16.58675ce4.js"><link rel="prefetch" href="/assets/js/17.f4199ca5.js"><link rel="prefetch" href="/assets/js/18.a6b55b07.js"><link rel="prefetch" href="/assets/js/19.32b86097.js"><link rel="prefetch" href="/assets/js/20.f17a10f8.js"><link rel="prefetch" href="/assets/js/21.c6d918ad.js"><link rel="prefetch" href="/assets/js/22.3be36221.js">
+    <link rel="stylesheet" href="/assets/css/23.styles.40677ac6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      韩小平的博客
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">文章</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/links/" class="nav-link">友链</a></div><a href="https://github.com/excaliburhan" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">文章</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/links/" class="nav-link">友链</a></div><a href="https://github.com/excaliburhan" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav><!----></div><div class="page"><div class="content"><h1 id="舍弃预处理，拥抱css变量"><a href="#舍弃预处理，拥抱css变量" aria-hidden="true" class="header-anchor">#</a> 舍弃预处理，拥抱CSS变量</h1><h2 id="什么是css变量"><a href="#什么是css变量" aria-hidden="true" class="header-anchor">#</a> 什么是CSS变量</h2><blockquote><p>CSS 变量是由网页的作者或用户定义的实体，用来指定文档中的特定变量。使用自定义属性来设置变量名，并使用特定的 var() 来访问。（比如 color:var(--main-color);）。</p></blockquote><h2 id="css变量的用途"><a href="#css变量的用途" aria-hidden="true" class="header-anchor">#</a> CSS变量的用途</h2><h3 id="取代预处理器变量"><a href="#取代预处理器变量" aria-hidden="true" class="header-anchor">#</a> 取代预处理器变量</h3><p>现在普遍使用的预处理器，如sass，less都提供了变量的概念，很适合用于组件化的样式编写。</p><p>以sass为例，简单的代码如下：</p><pre class="language-css"><code><span class="token selector">$mainColor: #333
+
+body</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> $mainColor<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>在js编译处理后，输出的css代码如下：</p><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>使用css变量，不需要编译处理，就可以达到相同效果，代码如下：</p><pre class="language-css"><code><span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--main-color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--main-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>两者实际效果完全相同，使用css变量，可以省去dev阶段使用预处理器的成本开销。当然，它的优点不至于此，下面会细说。</p><h3 id="实现浏览器前缀"><a href="#实现浏览器前缀" aria-hidden="true" class="header-anchor">#</a> 实现浏览器前缀</h3><p>相信前端都接触过autoprefixer这玩意，会给你的css代码加上各浏览器的前缀，让样式在各浏览器中保持一致。而这，也可以使用css变量实现。</p><p>我们以<code>box-shadow</code>为例来进行说明。</p><pre class="language-css"><code><span class="token selector">*</span> <span class="token punctuation">{</span>
+  <span class="token property">--box-shadow</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--box-shadow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--box-shadow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">--box-shadow</span><span class="token punctuation">:</span> 0 0 5px red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>上述代码能够添加<code>-webkit</code>的前缀，而且相信你也发现了，css变量是能够覆盖的，和css属性一样。是不是很棒？</p><h2 id="为什么使用css变量"><a href="#为什么使用css变量" aria-hidden="true" class="header-anchor">#</a> 为什么使用CSS变量</h2><p>当然，css变量的用法不局限于此，很考验你的想象力。现在，我们来说说为什么要使用它。</p><ul><li>你不需要一个预处理器；</li><li>你可以舍弃autoprefixer；</li><li>css变量能够覆盖，和css属性一样；</li><li>css变量覆盖后，如果需要，浏览器会进行重绘（很适合响应式）；</li><li>css变量能够通过js控制。</li></ul><h2 id="css变量的局限性"><a href="#css变量的局限性" aria-hidden="true" class="header-anchor">#</a> CSS变量的局限性</h2><h3 id="兼容性"><a href="#兼容性" aria-hidden="true" class="header-anchor">#</a> 兼容性</h3><p>具体数据请看<a href="http://caniuse.com/#feat=css-variables" target="_blank" rel="noopener noreferrer">Caniuse</a>。目前的情况是Chrome，Safari，Firefox等主流浏览器都支持，IE全军覆没。</p><p>如果你要兼容IE，那还是要悠着点。</p><h3 id="嵌套语法"><a href="#嵌套语法" aria-hidden="true" class="header-anchor">#</a> 嵌套语法</h3><p>预处理器的嵌套语法是我非常欣赏的一点，比如sass中可以这么写：</p><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token selector">;
+  div</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #666<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>然而原生css还是难以实现，至少我目前还没有想到解决方法。如果你有，请不吝赐教！</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/10.8acc4974.js" defer></script><script src="/assets/js/app.e57f2dcc.js" defer></script>
+  </body>
+</html>
