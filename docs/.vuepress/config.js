@@ -7,7 +7,7 @@ module.exports = {
     repo: 'https://github.com/excaliburhan', // github 链接
     nav: [
       { text: '首页', link: '/' },
-      { text: '文章', link: '/blog/' },
+      { text: '文章', link: '/posts/' },
       { text: '关于', link: '/about/' },
       { text: '友链', link: '/links/' }
     ]
