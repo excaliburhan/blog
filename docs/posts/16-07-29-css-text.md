@@ -37,7 +37,7 @@ CSS实现字体效果，消耗资源小，可塑性高，不过缺点也有，�
 }
 ```
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/29/4-pic-1469784203458.jpg?imageView/2/w/200)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/29/4-pic-1469784203458.jpg?imageView/2/w/200)
 
 这样就能做到简单的空心字效果了。不过这种实现的效果缺点也不少，描边越大，需要堆叠的次数也越多，资源消耗也会增加。
 
@@ -61,7 +61,7 @@ CSS实现字体效果，消耗资源小，可塑性高，不过缺点也有，�
 }
 ```
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/29/3-pic-1469786034526.jpg?imageView/2/w/200)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/29/3-pic-1469786034526.jpg?imageView/2/w/200)
 
 具体实现代码参见[demo2](https://codepen.io/excaliburhan/pen/QEByYX)。
 
@@ -88,7 +88,7 @@ CSS实现字体效果，消耗资源小，可塑性高，不过缺点也有，�
 }
 ```
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/29/2-pic-1469786605826.jpg?imageView/2/w/200)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/29/2-pic-1469786605826.jpg?imageView/2/w/200)
 
 text-shadow在y轴的偏移量会影响到字体的方向，如果偏移量为负值，就会得到上图2中的向上凸起的效果。
 

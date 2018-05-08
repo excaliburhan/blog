@@ -50,7 +50,7 @@ nw.js，前身nodeWebkit，顾名思义，是基于node+webkit运行的。加上
 
 当然，此时打开nwjs.app，只会看到一片空白，因为html内容就是空白的。你需要编辑html文件让它呈现内容。当然，在此之前，我们首先建立几个基本目录，构建我们的项目目录。一般来说，需要js/css/images，分别存放js文件/css文件/图片资源文件，最后的结构如图。
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/10/09/qq20161009-0-2x-1475999110974.png?imageView2/1/w/300)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/10/09/qq20161009-0-2x-1475999110974.png?imageView2/1/w/300)
 
 至此，我们的app项目已经有了一个雏形。
 
@@ -123,7 +123,7 @@ body {
 
 现在打开nwjs.app，你可以看到一个有界面的app了，虽然它还没有功能。
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/10/09/qq20161009-1-2x-1476000546973.png?imageView2/1/w/600)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/10/09/qq20161009-1-2x-1476000546973.png?imageView2/1/w/600)
 
 现在，编写你的js文件。我喜欢采用 `app.js` 作为入口js的做法，这样可以让你更少地修改 `index.html` 。利用require各个功能js的做法，利于你将功能分块。
 

@@ -134,7 +134,7 @@ service nginx restart
 
 ## 最终效果
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/03/04/https-1457070223090.png)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/03/04/https-1457070223090.png)
 
 至于https证书有什么用，当然是更加安全(~~装逼~~)。
 

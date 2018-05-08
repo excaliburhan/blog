@@ -15,19 +15,19 @@ Travis CI可以设置github托管的项目在push或者pull等时机触发构建
 
 - 1.登陆Travis CI官网，使用github授权登录，[官网地址](https://travis-ci.org/)
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/3-pic-1467773139613.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/3-pic-1467773139613.jpg)
 
 - 2.添加持续集成的项目，如下图所示，点击+号添加需要持续集成的项目。
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/4-pic_hd-1467773781180.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/4-pic_hd-1467773781180.jpg)
 
 - 3.继续操作，选择需要持续集成的项目，点击齿轮进行详细配置。
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/5-pic_hd-1467774145213.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/5-pic_hd-1467774145213.jpg)
 
 - 4.配置持续集成的条件，一般选择红线部分开启即可。
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/6-pic_hd-1467774254393.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/6-pic_hd-1467774254393.jpg)
 
 ## 配置.travis.yml文件
 
@@ -59,7 +59,7 @@ after_success: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls
 
 - 2.添加Repo。
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/8-pic_hd-1467776646416.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/8-pic_hd-1467776646416.jpg)
 
 - 3.添加.coveralls.yml文件，配合Travis CI账号是用，一般.coveralls.yml配置如下：
 
@@ -70,7 +70,7 @@ repo_token: xxx
 
 - 4.编写测试文件，nodejs用mocha的例子结果如下：
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/7-pic_hd-1467776934375.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/7-pic_hd-1467776934375.jpg)
 
 ## 为README.md增加badge
 
@@ -91,4 +91,4 @@ makedown格式的badge如下：
 
 这里推荐一下[shields.io](http://shields.io/)，可以自定义badge，自定义格式如下：
 
-![pic](https://o2znrmehg.qnssl.com/ghost/2016/07/06/9-pic-1467777324314.jpg)
+![alt](https://o2znrmehg.qnssl.com/ghost/2016/07/06/9-pic-1467777324314.jpg)
